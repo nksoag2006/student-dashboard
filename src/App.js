@@ -1,19 +1,21 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Counter from './pages/Counter';
-import Clock from './pages/Clock';
-import Form from './pages/Form';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import AppNavbar from './components/Navbar';
+import Home from './pages/Home';
+import Courses from './pages/Courses';
+import Profile from './pages/Profile';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
+    <Router>
+      <AppNavbar />
       <Routes>
-        <Route path="/counter" element={<Counter />} />
-        <Route path="/clock" element={<Clock />} />
-        <Route path="/form" element={<Form />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
