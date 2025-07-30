@@ -18,7 +18,7 @@ const activeLinkStyle = {
 
 const AppNavbar = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" className="shadow">
+    <Navbar bg="dark" variant="dark" expand={false} className="shadow">
       <Container>
         <Navbar.Brand href="/">🎓 Student Dashboard</Navbar.Brand>
         <Navbar.Toggle aria-controls="main-navbar" />
@@ -43,7 +43,7 @@ const AppNavbar = () => {
                   : linkStyle
               }
             >
-              Courses <Badge bg="success" pill>5</Badge>
+              Courses <Badge bg="success" pill>0</Badge>
             </NavLink>
 
             <NavLink
