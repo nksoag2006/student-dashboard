@@ -35,16 +35,6 @@ const AppNavbar = () => {
               Home <Badge bg="primary" pill>1</Badge>
             </NavLink>
 
-            <NavLink
-              to="/courses"
-              style={({ isActive }) =>
-                isActive
-                  ? { ...linkStyle, ...activeLinkStyle, backgroundColor: '#28a745' } // Green
-                  : linkStyle
-              }
-            >
-              Courses <Badge bg="success" pill>0</Badge>
-            </NavLink>
 
             <NavLink
               to="/profile"

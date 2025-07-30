@@ -10,7 +10,7 @@ const paymentHistory = [
 const Profile = () => {
   return (
     <div className="container mt-5 mb-5">
-      <h2 className="mb-4">📋 Student Profile & Records</h2>
+      <h2 className="mb-4">📋 Author's Profile & Records</h2>
       <div className="card shadow rounded p-4">
         <div className="row">
           {/* Photo + Basic Info */}
