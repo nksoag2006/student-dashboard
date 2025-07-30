@@ -32,7 +32,7 @@ const AppNavbar = () => {
                   : linkStyle
               }
             >
-              Home <Badge bg="primary" pill>1</Badge>
+              Home  <Badge bg="primary" pill></Badge>
             </NavLink>
 
 
@@ -44,7 +44,7 @@ const AppNavbar = () => {
                   : { ...linkStyle, color: 'black' }
               }
             >
-              Profile <Badge bg="warning" pill text="dark">!</Badge>
+              Profile <Badge bg="warning" pill text="dark"></Badge>
             </NavLink>
           </Nav>
         </Navbar.Collapse>

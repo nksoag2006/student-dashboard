@@ -24,13 +24,13 @@ const Profile = () => {
             <h4>Shadman Muhtasim</h4>
             <p className="text-muted mb-1">Student ID: 2025001</p>
             <p className="mb-1"><strong>Blood Group:</strong> B+</p>
-            <p><strong>Admission Date:</strong> 1 Jan 2020</p>
+            
           </div>
 
           {/* Detailed Info */}
           <div className="col-md-8">
             <ul className="list-group list-group-flush mb-4">
-              <li className="list-group-item"><strong>Previous Class Result:</strong> 85%</li>
+              <li className="list-group-item"><strong>Author's Name:</strong> Shadman Muhtasim</li>
               <li className="list-group-item"><strong>Father's Name:</strong> Mr. Rahman</li>
               <li className="list-group-item"><strong>Mother's Name:</strong> Mrs. Rahima</li>
               <li className="list-group-item"><strong>Father's Phone:</strong> +880123456789</li>
@@ -39,35 +39,9 @@ const Profile = () => {
               <li className="list-group-item"><strong>Permanent Address:</strong> Khulna, Bangladesh</li>
             </ul>
 
-            {/* Payment History Table */}
-            <h5>Payment History</h5>
-            <table className="table table-bordered">
-              <thead className="table-light">
-                <tr>
-                  <th>Month</th>
-                  <th>Amount</th>
-                  <th>Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                {paymentHistory.map(({ month, amount, status }, index) => (
-                  <tr key={index}>
-                    <td>{month}</td>
-                    <td>{amount}</td>
-                    <td className={status === 'Due' ? 'text-danger' : 'text-success'}>
-                      {status}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
 
-            {/* Attendance Summary */}
-            <h5 className="mt-4">Attendance</h5>
-            <p>
-              Present Days: <strong>180</strong> / Total Days: <strong>200</strong> <br />
-              Attendance Percentage: <strong>90%</strong>
-            </p>
+
+
           </div>
         </div>
       </div>
